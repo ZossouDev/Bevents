@@ -66,6 +66,3 @@ bevent/
 
 Ce projet est présenté comme démonstration. Certaines parties, notamment les paiements et certaines intégrations, peuvent être incomplètes.
 
-## Auteur
-
-Fulgence ZOSSOU

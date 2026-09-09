@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Font Awesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .api-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .api-card h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .api-card p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .api-card button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .api-card button:hover {
+            background-color: #0056b3;
+        }
+
+        .api-card i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>API Dashboard</h1>
+
+        <div class="api-card">
+            <h2><i class="fas fa-users"></i> GET Users</h2>
+            <p>Retrieve all users from the database.</p>
+            <button>Access Endpoint</button>
+        </div>
+
+        <div class="api-card">
+            <h2><i class="fas fa-user"></i> GET User by ID</h2>
+            <p>Retrieve a specific user by their ID.</p>
+            <button>Access Endpoint</button>
+        </div>
+
+        <div class="api-card">
+            <h2><i class="fas fa-user-plus"></i> POST User</h2>
+            <p>Add a new user to the database.</p>
+            <button>Access Endpoint</button>
+        </div>
+
+        <div class="api-card">
+            <h2><i class="fas fa-user-edit"></i> PUT User by ID</h2>
+            <p>Update an existing user by their ID.</p>
+            <button>Access Endpoint</button>
+        </div>
+
+        <div class="api-card">
+            <h2><i class="fas fa-user-minus"></i> DELETE User by ID</h2>
+            <p>Delete a user from the database by their ID.</p>
+            <button>Access Endpoint</button>
+        </div>
+
+        <!-- Add more API cards as needed -->
+
+    </div>
+
+</body>
+
+</html>

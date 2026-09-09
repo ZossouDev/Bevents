@@ -1,0 +1,21 @@
+<IfModule mod_headers.c>
+    # Autorise l'accès à toutes les origines en définissant les en-têtes CORS pour toutes les réponses
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<FilesMatch "\.(?i:jpg|jpeg|png|gif|bmp|svg)$">
+    <IfModule mod_mime.c>
+        # Définit le type MIME pour les différents formats d'images
+        AddType image/jpg .jpg
+        AddType image/jpeg .jpeg
+        AddType image/png .png
+        AddType image/gif .gif
+        AddType image/bmp .bmp
+        AddType image/svg+xml .svg
+    </IfModule>
+
+    <IfModule mod_headers.c>
+        # Applique les en-têtes CORS pour les fichiers images, permettant l'accès depuis n'importe quelle origine
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
